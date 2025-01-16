@@ -1,0 +1,13 @@
+def is_leap_year(year):
+    if year % 4 == 0:#if code is divisible by 4 that it is a leap year
+        if year %100 == 0:#if the code is divisible by 100and dont give 0 as remainder than it is  not a Leap year 
+            if year % 400 == 0:#fi code is having a remainder o after didvison of 400 it is a leap year
+                return True
+            else:
+                return False
+        else:
+            return True
+    else:
+        return False
+   
+is_leap_year(input("Which year?"))
